@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mauricio — Computer Science Student</title>
+  <meta name="description" content="Mauricio's portfolio, Computer Science student at EPN. Projects, skills, and contact." />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mauricio's Portfolio" />
+  <meta property="og:description" content="Projects, skills, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="assets/og-image.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mauricio's Portfolio" />
+  <meta name="twitter:description" content="Projects, skills, and contact." />
+  <meta name="twitter:image" content="assets/og-image.png" />
+
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Go to home">Mauricio</a>
+      <button id="theme-toggle" class="icon-btn" aria-pressed="false" aria-label="Toggle theme">🌙</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section container">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="accent">Mauricio</span></h1>
+        <p class="tagline">Computer Science Student — Quito, Ecuador</p>
+        <p class="bio">
+          Computer Science student at Escuela Politécnica Nacional focused on cybersecurity. I like building useful projects and learning new technologies every day.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="projects.html">View projects</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/FervidEmpress01" target="_blank" rel="noopener"><i data-lucide="github" aria-hidden="true"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/mauricio-carrion-aviles-98985b384/" target="_blank" rel="noopener"><i data-lucide="linkedin" aria-hidden="true"></i> LinkedIn</a>
+          <a href="mailto:mauricioalejo2011@hotmail.com"><i data-lucide="mail" aria-hidden="true"></i> Email</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/avatar.jpg" alt="Photo of Mauricio" />
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>
+        I'm a Computer Science student at Escuela Politécnica Nacional (Quito, Ecuador). I enjoy turning ideas into products and collaborating on problems that matter.
+      </p>
+      <ul class="about-list">
+        <li><strong>Focus:</strong> Frontend and web apps (React), with solid foundations in Java and Python.</li>
+        <li><strong>What I'm learning:</strong> Modern React patterns, TypeScript, data structures & algorithms.</li>
+        <li><strong>Interests:</strong> Building clean UIs, performance, and accessible experiences.</li>
+      </ul>
+    </section>
+
+    
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>Got an idea or project? Write to me and let's talk.</p>
+      <form id="contact-form" class="form" method="POST" data-formspree="">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="your@email.com" required />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+        </div>
+        <button class="btn primary" type="submit">Send</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="alt-contact">
+        Or send me an email directly at
+        <a href="mailto:mauricioalejo2011@hotmail.com">mauricioalejo2011@hotmail.com</a>.
+      </p>
+      <p class="alt-contact">
+        Or call/WhatsApp me at
+        <a href="tel:+593992563810"><i data-lucide="phone" aria-hidden="true"></i> +593 99 256 3810</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Mauricio — Quito, Ecuador</p>
+      <div class="footer-links">
+        <a href="https://github.com/FervidEmpress01" target="_blank" rel="noopener"><i data-lucide="github" aria-hidden="true"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/mauricio-carrion-aviles-98985b384/" target="_blank" rel="noopener"><i data-lucide="linkedin" aria-hidden="true"></i> LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
+
+    <section id="skills" class="section container skills-section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group card reveal">
+          <h3>Languages</h3>
+          <ul class="chips">
+            <li class="chip glow">Java</li>
+            <li class="chip glow">Python</li>
+          </ul>
+        </div>
+        <div class="skill-group card reveal">
+          <h3>Tools</h3>
+          <ul class="chips">
+            <li class="chip">Git</li>
+            <li class="chip">VS Code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
