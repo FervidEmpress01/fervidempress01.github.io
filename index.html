@@ -22,6 +22,12 @@
 
   <link rel="icon" href="assets/favicon.png" />
   <link rel="stylesheet" href="styles/main.css" />
+  <!-- Devicon (technology icons) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+  <style>
+    /* Small tweaks so icons align nicely inside chips */
+    .chip i[class^="devicon-"], .chip i[class*=" devicon-"]{font-size:1.1em; line-height:0; margin-right:6px; display:inline-block}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -44,7 +50,7 @@
         <h1>Hi, I'm <span class="accent">Mauricio</span></h1>
         <p class="tagline">Computer Science Student — Quito, Ecuador</p>
         <p class="bio">
-          Computer Science student at Escuela Politécnica Nacional focused on cybersecurity. I like building useful projects and learning new technologies every day.
+          Computer Science student at Escuela Politécnica Nacional, interested in cybersecurity. I'm currently learning React (beginner) and I like building useful projects while learning new technologies every day.
         </p>
         <div class="cta">
           <a class="btn primary" href="projects.html">View projects</a>
@@ -64,13 +70,33 @@
     <section id="about" class="section container">
       <h2>About</h2>
       <p>
-        I'm a Computer Science student at Escuela Politécnica Nacional (Quito, Ecuador). I enjoy turning ideas into products and collaborating on problems that matter.
+        I'm a Computer Science student at Escuela Politécnica Nacional (Quito, Ecuador). I recently learned Python and I'm starting with React at a beginner level. I'm especially interested in cybersecurity and I have decent knowledge of computer networks.
       </p>
       <ul class="about-list">
-        <li><strong>Focus:</strong> Frontend and web apps (React), with solid foundations in Java and Python.</li>
-        <li><strong>What I'm learning:</strong> Modern React patterns, TypeScript, data structures & algorithms.</li>
-        <li><strong>Interests:</strong> Building clean UIs, performance, and accessible experiences.</li>
+        <li><strong>Focus:</strong> Cybersecurity and computer networks; Python and Java foundations.</li>
+        <li><strong>Currently learning:</strong> React (beginner), web and network security.</li>
+        <li><strong>Interests:</strong> Cybersecurity and strengthening networking skills; I'm not particularly focused on frontend.</li>
       </ul>
+    </section>
+
+    <section id="skills" class="section container skills-section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group card reveal">
+          <h3>Languages</h3>
+          <ul class="chips">
+            <li class="chip glow"><i class="devicon-java-plain" aria-hidden="true"></i>Java</li>
+            <li class="chip glow"><i class="devicon-python-plain" aria-hidden="true"></i>Python</li>
+          </ul>
+        </div>
+        <div class="skill-group card reveal">
+          <h3>Tools</h3>
+          <ul class="chips">
+            <li class="chip"><i class="devicon-git-plain" aria-hidden="true"></i>Git</li>
+            <li class="chip"><i class="devicon-vscode-plain" aria-hidden="true"></i>VS Code</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     
@@ -119,23 +145,3 @@
   <script src="scripts/main.js" defer></script>
 </body>
 </html>
-
-    <section id="skills" class="section container skills-section">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-group card reveal">
-          <h3>Languages</h3>
-          <ul class="chips">
-            <li class="chip glow">Java</li>
-            <li class="chip glow">Python</li>
-          </ul>
-        </div>
-        <div class="skill-group card reveal">
-          <h3>Tools</h3>
-          <ul class="chips">
-            <li class="chip">Git</li>
-            <li class="chip">VS Code</li>
-          </ul>
-        </div>
-      </div>
-    </section>
